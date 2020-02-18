@@ -17,7 +17,7 @@ const db = low(adapter);
 const Mux = require("@mux/mux-node");
 const { Video, Data } = new Mux();
 
-var whitelist = ['http://2am.tv/', 'https://2am.tv/', 'https://2am.netlify.com/']
+var whitelist = ['http://2am.tv/', 'https://2am.tv/', 'https://2am.tv', 'https://2am.tv/login' 'https://2am.netlify.com/']
 var corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
