@@ -179,7 +179,7 @@ app.post("/asset", function(req, res) {
   var json = JSON.stringify(asset_obj);
   console.log(json);
   Video.Uploads.create({
-    cors_origin: "http://localhost:8080",
+    cors_origin: "https://twoamtv.herokuapp.com",
     new_asset_settings: {
       playback_policy: "public",
       passthrough: json
