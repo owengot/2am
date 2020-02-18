@@ -29,6 +29,8 @@ var corsOptions = {
   }
 }
 
+app.use(cors());
+
 const server = app.listen(PORT, function() {
   console.log(`Listening on Port ${PORT}`);
 });
