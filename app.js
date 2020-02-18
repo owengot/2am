@@ -224,7 +224,7 @@ app.post("/ping", cors(corsOptions), async function(req, res) {
   res.send(req.body);
 });
 
-app.post("/new_asset", cors(corsOptions), async function(req, res) {
+app.post("/new_asset", cors(), async function(req, res) {
   const { type: eventType, data: eventData } = await req.body;
 
   switch (eventType) {
