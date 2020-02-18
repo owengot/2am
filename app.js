@@ -20,6 +20,7 @@ const { Video, Data } = new Mux();
 var whitelist = ['http://2am.tv/', 'https://2am.tv/', 'https://2am.tv', 'https://2am.tv/admin', 'https://2am.tv/login', 'https://2am.netlify.com/']
 var corsOptions = {
   origin: function (origin, callback) {
+    console.log('origin: ' + origin)
     if (whitelist.indexOf(origin) !== -1) {
       callback(null, true)
     } else {
