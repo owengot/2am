@@ -1,10 +1,6 @@
-# Edgeryders Now API
+# 2am.tv API
 
-Micro service that consolidates, updates and caches JSON data from the Edgeryders Discourse API for Edgeryders mini sites.
-
-The nature of this API may change in the future as these features are rolled into a Discourse plugin.
-
-Currently used for: [Edgeryders Festival](http://festival.edgeryders.eu)
+Micro service that updates and caches JSON data from 2am.tv.
 
 ## Project setup
 ```
