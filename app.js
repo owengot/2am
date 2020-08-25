@@ -194,7 +194,7 @@ app.post("/asset", function(req, res) {
   var json = JSON.stringify(asset_obj);
   console.log(json);
   Video.Uploads.create({
-    cors_origin: "https://twoamtv.herokuapp.com",
+    cors_origin: "https://edgr.app",
     new_asset_settings: {
       playback_policy: "public",
       passthrough: json
