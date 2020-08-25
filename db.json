@@ -3,25 +3,21 @@
     "entries": [
       {
         "id": "879876897",
-        "videos": [
-          {
-            "date": 1581881062,
-            "duration": 6.75,
-            "id": "1"
-          }
-        ],
+        "videos": [{ "date": 1581881062, "duration": 6.75, "id": "1" }],
         "total": 6.75
       },
       {
         "id": "879876897",
         "videos": [
           {
-            "date": 1581881062,
-            "duration": 6.75,
-            "id": "7"
+            "date": 1598385144,
+            "duration": 38.597889,
+            "id": "HS6n8tWCB",
+            "user": "742359389",
+            "status": "uploaded"
           }
         ],
-        "total": 6.75
+        "total": 38.597889
       }
     ]
   },
@@ -39,7 +35,8 @@
         "id": "1",
         "asset_id": "F7Miyun7Z6xr9FOBXSuJva7BjGtxOvF00",
         "status": "uploaded",
-        "index": null
+        "index": 0,
+        "live": 6.13
       },
       {
         "url": "https://stream.mux.com/FEjkwG7yaGcW2BForZ029ghJsOhih6Bvw.m3u8",
@@ -51,6 +48,60 @@
         "playlist": [""],
         "id": "7",
         "asset_id": "F7Miyun7Z6xr9FOBXSuJva7BjGtxOvF00",
+        "status": "uploaded",
+        "index": 0,
+        "live": 4.51
+      },
+      {
+        "url": "https://stream.mux.com/bBnfAX1vAtOk020000P02WK5iHo14qBuUKGx.m3u8",
+        "duration": 38.597889,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/bBnfAX1vAtOk020000P02WK5iHo14qBuUKGx/animated.gif",
+        "date": 1598385144,
+        "playlist": [""],
+        "id": "HS6n8tWCB",
+        "asset_id": "00V202FVlC9vXsN8JLfjlkMB4dOql7sW7Q",
+        "status": "uploaded",
+        "index": 0,
+        "live": 2.0199999999999996
+      },
+      {
+        "url": "https://stream.mux.com/bBnfAX1vAtOk020000P02WK5iHo14qBuUKGx.m3u8",
+        "duration": 38.597889,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/bBnfAX1vAtOk020000P02WK5iHo14qBuUKGx/animated.gif",
+        "date": 1598385144,
+        "playlist": [""],
+        "id": "HS6n8tWCB",
+        "asset_id": "00V202FVlC9vXsN8JLfjlkMB4dOql7sW7Q",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/V2gGg2FNUo01md3AadiQl4Qmlqu7xTLKy.m3u8",
+        "duration": 11.2,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/V2gGg2FNUo01md3AadiQl4Qmlqu7xTLKy/animated.gif",
+        "date": 1598385201,
+        "playlist": [""],
+        "id": "n-SZpcxmI",
+        "asset_id": "wnp1GDeDWizV9I6g8b87X01SaqS4ATyN4",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/V2gGg2FNUo01md3AadiQl4Qmlqu7xTLKy.m3u8",
+        "duration": 11.2,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/V2gGg2FNUo01md3AadiQl4Qmlqu7xTLKy/animated.gif",
+        "date": 1598385201,
+        "playlist": [""],
+        "id": "n-SZpcxmI",
+        "asset_id": "wnp1GDeDWizV9I6g8b87X01SaqS4ATyN4",
         "status": "uploaded",
         "index": null
       }
@@ -85,8 +136,7 @@
     }
   ],
   "archive": {
-    "videos": [
-    ],
+    "videos": [],
     "playlists": []
   }
 }
