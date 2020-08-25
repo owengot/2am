@@ -2,12 +2,7 @@
   "playlists": {
     "entries": [
       {
-        "id": "879876897",
-        "videos": [{ "date": 1581881062, "duration": 6.75, "id": "1" }],
-        "total": 6.75
-      },
-      {
-        "id": "879876897",
+        "id": "1",
         "videos": [
           {
             "date": 1598385144,
@@ -18,6 +13,73 @@
           }
         ],
         "total": 38.597889
+      },
+      {
+        "id": "2",
+        "videos": [
+          {
+            "date": 1598386625,
+            "duration": 10.433333,
+            "id": "NeOHtg-8t",
+            "user": "742359389",
+            "status": "uploaded"
+          },
+          {
+            "date": 1598386631,
+            "duration": 42.433333,
+            "id": "zO2T9FX7v",
+            "user": "742359389",
+            "status": "uploaded"
+          },
+          {
+            "date": 1598386631,
+            "duration": 34.566667,
+            "id": "CksNheXwO",
+            "user": "742359389",
+            "status": "uploaded"
+          }
+        ],
+        "total": 87.433333
+      },
+      {
+        "id": "3",
+        "videos": [
+          {
+            "date": 1598386628,
+            "duration": 190.266667,
+            "id": "yAChDbRwo",
+            "user": "742359389",
+            "status": "uploaded"
+          }
+        ],
+        "total": 190.266667
+      },
+      {
+        "id": "4",
+        "videos": [
+          {
+            "date": 1598386646,
+            "duration": 29.166667,
+            "id": "9DT0LP6tG",
+            "user": "742359389",
+            "status": "uploaded"
+          },
+          {
+            "date": 1598386724,
+            "duration": 83.847889,
+            "id": "ACrY8P69W",
+            "user": "742359389",
+            "status": "uploaded"
+          },
+          {
+            "date": 1598386647,
+            "duration": 41.9,
+            "id": "Vsk5_ilt-",
+            "user": "742359389",
+            "status": "uploaded"
+          }
+        ],
+        "total": 154.914556
       }
     ]
   },
@@ -36,7 +98,7 @@
         "asset_id": "F7Miyun7Z6xr9FOBXSuJva7BjGtxOvF00",
         "status": "uploaded",
         "index": 0,
-        "live": 6.13
+        "live": 5.58
       },
       {
         "url": "https://stream.mux.com/FEjkwG7yaGcW2BForZ029ghJsOhih6Bvw.m3u8",
@@ -64,7 +126,7 @@
         "asset_id": "00V202FVlC9vXsN8JLfjlkMB4dOql7sW7Q",
         "status": "uploaded",
         "index": 0,
-        "live": 2.0199999999999996
+        "live": 24.56
       },
       {
         "url": "https://stream.mux.com/bBnfAX1vAtOk020000P02WK5iHo14qBuUKGx.m3u8",
@@ -102,6 +164,292 @@
         "playlist": [""],
         "id": "n-SZpcxmI",
         "asset_id": "wnp1GDeDWizV9I6g8b87X01SaqS4ATyN4",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/Lf00025mLm700oFQyR3gNSIS7N9Jb2GX7dv.m3u8",
+        "duration": 10.433333,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/Lf00025mLm700oFQyR3gNSIS7N9Jb2GX7dv/animated.gif",
+        "date": 1598386625,
+        "playlist": [""],
+        "id": "NeOHtg-8t",
+        "asset_id": "vadrhIypmclxlB85oGJtBnucnEkD12KN",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/Lf00025mLm700oFQyR3gNSIS7N9Jb2GX7dv.m3u8",
+        "duration": 10.433333,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/Lf00025mLm700oFQyR3gNSIS7N9Jb2GX7dv/animated.gif",
+        "date": 1598386625,
+        "playlist": [""],
+        "id": "NeOHtg-8t",
+        "asset_id": "vadrhIypmclxlB85oGJtBnucnEkD12KN",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/eIqUlVYXSb5LWuhtLCDQGa8I8XXcPyoz.m3u8",
+        "duration": 190.266667,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/eIqUlVYXSb5LWuhtLCDQGa8I8XXcPyoz/animated.gif",
+        "date": 1598386628,
+        "playlist": [""],
+        "id": "yAChDbRwo",
+        "asset_id": "JrntD5ifG21wgJ9qvjATAdrswEZhuMpW",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/eIqUlVYXSb5LWuhtLCDQGa8I8XXcPyoz.m3u8",
+        "duration": 190.266667,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/eIqUlVYXSb5LWuhtLCDQGa8I8XXcPyoz/animated.gif",
+        "date": 1598386628,
+        "playlist": [""],
+        "id": "yAChDbRwo",
+        "asset_id": "JrntD5ifG21wgJ9qvjATAdrswEZhuMpW",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/O009e81npagqxmq7aZNzI9W5EAdh3pErE.m3u8",
+        "duration": 34.566667,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/O009e81npagqxmq7aZNzI9W5EAdh3pErE/animated.gif",
+        "date": 1598386631,
+        "playlist": [""],
+        "id": "CksNheXwO",
+        "asset_id": "CSmfP3f00rWoyD7W00UUrUpZELfvOwxGUM",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/O009e81npagqxmq7aZNzI9W5EAdh3pErE.m3u8",
+        "duration": 34.566667,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/O009e81npagqxmq7aZNzI9W5EAdh3pErE/animated.gif",
+        "date": 1598386631,
+        "playlist": [""],
+        "id": "CksNheXwO",
+        "asset_id": "CSmfP3f00rWoyD7W00UUrUpZELfvOwxGUM",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/ru01KwWaXz2LSPRTUpCldgIg8iJTxmSiZ.m3u8",
+        "duration": 42.433333,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/ru01KwWaXz2LSPRTUpCldgIg8iJTxmSiZ/animated.gif",
+        "date": 1598386631,
+        "playlist": [""],
+        "id": "zO2T9FX7v",
+        "asset_id": "WaZVAvvKsNCRK1GnaJoV6Zw9iIcbmIzQ",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/ru01KwWaXz2LSPRTUpCldgIg8iJTxmSiZ.m3u8",
+        "duration": 42.433333,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/ru01KwWaXz2LSPRTUpCldgIg8iJTxmSiZ/animated.gif",
+        "date": 1598386631,
+        "playlist": [""],
+        "id": "zO2T9FX7v",
+        "asset_id": "WaZVAvvKsNCRK1GnaJoV6Zw9iIcbmIzQ",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/NqXorF4HjkZ8XATlyJBlJvyrM3dRAQZa.m3u8",
+        "duration": 33.133333,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/NqXorF4HjkZ8XATlyJBlJvyrM3dRAQZa/animated.gif",
+        "date": 1598386646,
+        "playlist": [""],
+        "id": "D4o2UzMHx",
+        "asset_id": "MzuPEfA00Xf9RcwxVuNynhr7EGvUZ74BK",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/vuo3dHNjcl6aeyiyqEc15U2uySYkXaTH.m3u8",
+        "duration": 29.166667,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/vuo3dHNjcl6aeyiyqEc15U2uySYkXaTH/animated.gif",
+        "date": 1598386646,
+        "playlist": [""],
+        "id": "9DT0LP6tG",
+        "asset_id": "X00pR7p00SnEZPUKJdFzxDXwoC6z01IqOTh",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/NqXorF4HjkZ8XATlyJBlJvyrM3dRAQZa.m3u8",
+        "duration": 33.133333,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/NqXorF4HjkZ8XATlyJBlJvyrM3dRAQZa/animated.gif",
+        "date": 1598386646,
+        "playlist": [""],
+        "id": "D4o2UzMHx",
+        "asset_id": "MzuPEfA00Xf9RcwxVuNynhr7EGvUZ74BK",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/vuo3dHNjcl6aeyiyqEc15U2uySYkXaTH.m3u8",
+        "duration": 29.166667,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/vuo3dHNjcl6aeyiyqEc15U2uySYkXaTH/animated.gif",
+        "date": 1598386646,
+        "playlist": [""],
+        "id": "9DT0LP6tG",
+        "asset_id": "X00pR7p00SnEZPUKJdFzxDXwoC6z01IqOTh",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/VGTk9jeFPyMJIUXWJgjABBBAInVnfjm00.m3u8",
+        "duration": 41.9,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/VGTk9jeFPyMJIUXWJgjABBBAInVnfjm00/animated.gif",
+        "date": 1598386647,
+        "playlist": [""],
+        "id": "Vsk5_ilt-",
+        "asset_id": "hrK801cXDgYL7PstB6rYQW02OwLmKwtXiD",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/VGTk9jeFPyMJIUXWJgjABBBAInVnfjm00.m3u8",
+        "duration": 41.9,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/VGTk9jeFPyMJIUXWJgjABBBAInVnfjm00/animated.gif",
+        "date": 1598386647,
+        "playlist": [""],
+        "id": "Vsk5_ilt-",
+        "asset_id": "hrK801cXDgYL7PstB6rYQW02OwLmKwtXiD",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/zG6DBM6LUkaXfHd3jXPnDUvcpE300wz2N.m3u8",
+        "duration": 13.44,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/zG6DBM6LUkaXfHd3jXPnDUvcpE300wz2N/animated.gif",
+        "date": 1598386672,
+        "playlist": [""],
+        "id": "q70I75_2s",
+        "asset_id": "LHuwAdSAwbFbIMdrvx7IgKTwHNfN98Gr",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/zG6DBM6LUkaXfHd3jXPnDUvcpE300wz2N.m3u8",
+        "duration": 13.44,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/zG6DBM6LUkaXfHd3jXPnDUvcpE300wz2N/animated.gif",
+        "date": 1598386672,
+        "playlist": [""],
+        "id": "q70I75_2s",
+        "asset_id": "LHuwAdSAwbFbIMdrvx7IgKTwHNfN98Gr",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/IkopsQ4tXsRt3MVKQur4I93gF8lWanfR.m3u8",
+        "duration": 53.62,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/IkopsQ4tXsRt3MVKQur4I93gF8lWanfR/animated.gif",
+        "date": 1598386702,
+        "playlist": [""],
+        "id": "lpql-pkUJ",
+        "asset_id": "5ADKnJd1dwY6CIZkTDNv01lyrHCj2dq4l",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/IkopsQ4tXsRt3MVKQur4I93gF8lWanfR.m3u8",
+        "duration": 53.62,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/IkopsQ4tXsRt3MVKQur4I93gF8lWanfR/animated.gif",
+        "date": 1598386702,
+        "playlist": [""],
+        "id": "lpql-pkUJ",
+        "asset_id": "5ADKnJd1dwY6CIZkTDNv01lyrHCj2dq4l",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/arVQjGXP9pPzLQSF378Z8BfmHWYTKCjs.m3u8",
+        "duration": 83.847889,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/arVQjGXP9pPzLQSF378Z8BfmHWYTKCjs/animated.gif",
+        "date": 1598386724,
+        "playlist": [""],
+        "id": "ACrY8P69W",
+        "asset_id": "qRJD6GrZJfOEQny65XbK2gpx6mhssjAR",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/arVQjGXP9pPzLQSF378Z8BfmHWYTKCjs.m3u8",
+        "duration": 83.847889,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/arVQjGXP9pPzLQSF378Z8BfmHWYTKCjs/animated.gif",
+        "date": 1598386724,
+        "playlist": [""],
+        "id": "ACrY8P69W",
+        "asset_id": "qRJD6GrZJfOEQny65XbK2gpx6mhssjAR",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/y2VPTv8q2Dtw95P023YMVqjXUE2BSlhHt.m3u8",
+        "duration": 22.205,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/y2VPTv8q2Dtw95P023YMVqjXUE2BSlhHt/animated.gif",
+        "date": 1598386776,
+        "playlist": [""],
+        "id": "G1RtgLDc7",
+        "asset_id": "vteYIHLfXfbF00k5eMnzmPsZD302HWG1q9",
+        "status": "uploaded",
+        "index": null
+      },
+      {
+        "url": "https://stream.mux.com/y2VPTv8q2Dtw95P023YMVqjXUE2BSlhHt.m3u8",
+        "duration": 22.205,
+        "caption": "",
+        "user": "742359389",
+        "thumbnail": "https://image.mux.com/y2VPTv8q2Dtw95P023YMVqjXUE2BSlhHt/animated.gif",
+        "date": 1598386776,
+        "playlist": [""],
+        "id": "G1RtgLDc7",
+        "asset_id": "vteYIHLfXfbF00k5eMnzmPsZD302HWG1q9",
         "status": "uploaded",
         "index": null
       }
