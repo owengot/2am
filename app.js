@@ -4,6 +4,7 @@ const app = express();
 require("dotenv").config();
 
 app.use(express.json());
+var cors = require('cors')
 
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
@@ -15,6 +16,20 @@ const db = low(adapter);
 
 const Mux = require("@mux/mux-node");
 const { Video, Data } = new Mux();
+
+var whitelist = ['http://2am.tv/', 'http://localhost:8080', 'https://2am.tv/', 'https://mux.com/', 'https://2am.tv', 'https://2am.tv/admin', 'https://2am.tv/login', 'https://2am.netlify.com/']
+var corsOptions = {
+  origin: function (origin, callback) {
+    console.log('origin: ' + origin)
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
+}
+
+app.use(cors(corsOptions));
 
 const server = app.listen(PORT, function() {
   console.log(`Listening on Port ${PORT}`);
@@ -209,7 +224,7 @@ app.post("/ping", async function(req, res) {
   res.send(req.body);
 });
 
-app.post("/new_asset", async function(req, res) {
+app.post("/new_asset", cors(), async function(req, res) {
   const { type: eventType, data: eventData } = await req.body;
 
   switch (eventType) {
