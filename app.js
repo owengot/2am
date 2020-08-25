@@ -18,18 +18,6 @@ const Mux = require("@mux/mux-node");
 const { Video, Data } = new Mux();
 
 var whitelist = ['http://2am.tv/', 'http://localhost:8080', 'https://2am.tv/', 'https://mux.com/', 'https://2am.tv', 'https://2am.tv/admin', 'https://2am.tv/login', 'https://2am.netlify.com/']
-var corsOptions = {
-  origin: function (origin, callback) {
-    console.log('origin: ' + origin)
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
-}
-
-app.use(cors());
 
 const server = app.listen(PORT, function() {
   console.log(`Listening on Port ${PORT}`);
@@ -174,7 +162,7 @@ var setLive = function() {
 
 timer.setInterval(setLive, "", "10m");
 
-app.get("/total", cors(corsOptions), function(req, res) {
+app.get("/total", function(req, res) {
   total = total + 2000;
 
   var obj = {
@@ -184,7 +172,7 @@ app.get("/total", cors(corsOptions), function(req, res) {
   res.send(obj);
 });
 
-app.post("/asset", cors(corsOptions), function(req, res) {
+app.post("/asset", function(req, res) {
   var user_id = req.body.id;
   var video_id = shortid.generate();
   var asset_obj = {
@@ -210,7 +198,7 @@ app.post("/asset", cors(corsOptions), function(req, res) {
 
 });
 
-app.post("/auth", cors(corsOptions), async function(req, res) {
+app.post("/auth", async function(req, res) {
 
    var user = db.get("users").find({ username: req.body.username }).value();
      console.log(user);
@@ -219,12 +207,12 @@ app.post("/auth", cors(corsOptions), async function(req, res) {
    res.send(member);
 });
 
-app.post("/ping", cors(corsOptions), async function(req, res) {
+app.post("/ping", async function(req, res) {
   socketio.emit("ping", req.body);
   res.send(req.body);
 });
 
-app.post("/new_asset", cors(), async function(req, res) {
+app.post("/new_asset", async function(req, res) {
   const { type: eventType, data: eventData } = await req.body;
 
   switch (eventType) {
@@ -277,20 +265,20 @@ var videoid = passthrough.video_id.toString();
   res.send(eventType);
 });
 
-app.get("/live", cors(corsOptions), function(req, res) {
+app.get("/live", function(req, res) {
   var obj = getLive();
   res.send(obj); //respond with the array of courses
 });
 
-app.get("/playlists", cors(corsOptions), function(req, res) {
+app.get("/playlists", function(req, res) {
   res.send(db.get("playlists"));
 });
 
-app.get("/members", cors(corsOptions), function(req, res) {
+app.get("/members", function(req, res) {
   res.send(db.get("members"));
 });
 
-app.get("/members/:id", cors(corsOptions), function(req, res) {
+app.get("/members/:id", function(req, res) {
   
   var user = db.get("members")
       .find({ id: req.params.id })
@@ -299,7 +287,7 @@ app.get("/members/:id", cors(corsOptions), function(req, res) {
 
 });
 
-app.get("/playlists/:id", cors(corsOptions), function(req, res) {
+app.get("/playlists/:id", function(req, res) {
   const playlist = getPlaylist(req.params.id);
 
   if (!playlist) {
@@ -309,7 +297,7 @@ app.get("/playlists/:id", cors(corsOptions), function(req, res) {
   res.send(playlist);
 });
 
-app.get("/playlists/:id/videos", cors(corsOptions), function(req, res) {
+app.get("/playlists/:id/videos", function(req, res) {
   //return the object
   const playlist = getPlaylist(req.params.id);
 
@@ -320,11 +308,11 @@ app.get("/playlists/:id/videos", cors(corsOptions), function(req, res) {
   res.send(playlist.videos);
 });
 
-app.get("/videos", cors(corsOptions), function(req, res) {
+app.get("/videos", function(req, res) {
   res.send(db.get("videos"));
 });
 
-app.get("/videos/duration", cors(corsOptions), function(req, res) {
+app.get("/videos/duration", function(req, res) {
   const videos = db.get("videos");
   const duration = videos
     .map(item => Number(item.duration))
@@ -336,7 +324,7 @@ app.get("/videos/duration", cors(corsOptions), function(req, res) {
   res.send(obj);
 });
 
-app.get("/videos/:id", cors(corsOptions), function(req, res) {
+app.get("/videos/:id", function(req, res) {
   //return the object
   const video = getVideo(req.params.id);
 
@@ -347,7 +335,7 @@ app.get("/videos/:id", cors(corsOptions), function(req, res) {
   res.send(video);
 });
 
-app.get("/playlists/:id/duration", cors(corsOptions), function(req, res) {
+app.get("/playlists/:id/duration", function(req, res) {
   //return the object
   const playlist = getPlaylist(req.params.id);
 
@@ -363,7 +351,7 @@ app.get("/playlists/:id/duration", cors(corsOptions), function(req, res) {
   res.send(obj);
 });
 
-app.post("/add", cors(corsOptions), function(req, res) {
+app.post("/add", function(req, res) {
   const video = req.body;
   videoId = shortid.generate();
   video["id"] = videoId;
@@ -387,7 +375,7 @@ app.post("/add", cors(corsOptions), function(req, res) {
   res.send(video);
 });
 
-app.put("/videos/update", cors(corsOptions), function(req, res) {
+app.put("/videos/update", function(req, res) {
   db.get("videos")
     .set("entries", req.body)
     .write();
@@ -395,7 +383,7 @@ app.put("/videos/update", cors(corsOptions), function(req, res) {
   updateTotals();
 });
 
-app.put("/playlists/update", cors(corsOptions), function(req, res) {
+app.put("/playlists/update", function(req, res) {
   db.get("playlists")
     .set("entries", req.body)
     .write();
@@ -405,11 +393,11 @@ app.put("/playlists/update", cors(corsOptions), function(req, res) {
   res.send(db.get("playlists"));
 });
 
-app.get("/archive", cors(corsOptions), function(req, res) {
+app.get("/archive", function(req, res) {
   res.send(db.get("archive"));
 });
 
-app.post("/archive", cors(corsOptions), function(req, res) {
+app.post("/archive", function(req, res) {
   const video = req.body;
   db.get("archive.videos")
     .push(video)
@@ -417,7 +405,7 @@ app.post("/archive", cors(corsOptions), function(req, res) {
 
   res.send(db.get("archive"));
 });
-app.post("/add/:id", cors(corsOptions), function(req, res) {
+app.post("/add/:id", function(req, res) {
   const playlist = getPlaylist(req.params.id);
   const video = req.body;
   const videoId = shortid.generate();
